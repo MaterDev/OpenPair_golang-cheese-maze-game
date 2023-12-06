@@ -29,7 +29,7 @@ Mouse Maze is a simple console-based game written in Go. In this game, players n
 
 The game uses a 2D matrix to represent the maze. The matrix is a 2D array of characters. Each character represents a cell in the maze. Navigating the matrix involves moving the mouse to a new cell by changing its X and Y coordinates.
 
-![2D Matrix](./2dGridDiagram.png)
+![2D Matrix](./coordinates.png)
 
 ### Requirements
 
