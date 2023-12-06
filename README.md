@@ -1,18 +1,53 @@
-# OpenPair: Golang Intro 04
+# OpenPair: Golang 04 - Get the Cheese
 
 ![Cover Image](./cover.png)
 
-Welcome to `GoLang Intro 04`! In this session of our series, we further explore GoLang, with a special focus on concurrency, pointers, and interfaces. These concepts are demonstrated through a series of examples in our `main.go` file. You can also find the corresponding study session recorded on my [YouTube channel](https://www.youtube.com/playlist?list=PL2NvA4OAtDRS2wBL2FvjiSlKCtcBrcFzc).
+## Mouse Maze Game
 
-## Main Code (main.go)
+### Overview
 
-The `main.go` file in this session covers:
+Mouse Maze is a simple console-based game written in Go. In this game, players navigate a mouse through a maze to find cheese. The game is played in the terminal and uses basic character representations for the maze, mouse, and cheese.
 
-- **Concurrency**: Demonstrating Go's concurrency model using goroutines, channels, and the `select` statement. The examples range from basic synchronization of goroutines to more advanced patterns involving multiple channel communications.
-- **Pointers**: Introduction to pointers in Go, illustrating how they can be used to modify values and to implement methods with pointer receivers in structs.
-- **Interfaces**: Showcasing how interfaces are defined and implemented in Go. The examples include simple interfaces as well as more advanced uses demonstrating polymorphism.
+### How to Play
 
-## Running the Code
+- Your goal is to move the mouse to the cheese.
+- Use WASD keys for movement:
+  - `W`: Move up
+  - `A`: Move left
+  - `S`: Move down
+  - `D`: Move right
+- The game ends when you successfully guide the mouse to the cheese.
+
+### Features
+
+- Simple maze structure with a static layout.
+- Console-based user interface.
+- Basic keyboard input to control the mouse.
+- Clear screen functionality for a smooth gaming experience.
+
+### Requirements
+
+- Go programming language
+- A terminal that can execute Go programs
+
+### Installation and Running the Game
+
+1. Ensure that Go is installed on your system.
+2. Clone or download the source code from this repository.
+3. Navigate to the directory containing the game's source code.
+4. Run the game using the command: `go run main.go`
+
+### Game Structure
+
+- `Mouse` struct: Represents the player's character with X, Y coordinates.
+- `Maze` struct: Represents the game maze with a grid layout.
+- `main`: The main function sets up the game loop and handles user input.
+- `clearScreen`: Clears the terminal screen for a cleaner display.
+- `createMaze`: Initializes the maze with a predefined layout.
+- `printMaze`: Renders the maze and the mouse's position in the terminal.
+- `handleInput`: Handles player's keyboard input to control the mouse's movement.
+
+### Running the Code
 
 To run the main program, execute the following in your terminal:
 
@@ -20,12 +55,12 @@ To run the main program, execute the following in your terminal:
 go run main.go
 ```
 
-## Useful Resources
+### Useful Resources For Learning Go
 
 In addition to the resources provided in the first tutorial, here are some more to deepen your understanding of Go:
 
+- [GoLang-Book](https://www.golang-book.com/books/intro): A free online book that covers the basics of Go.
 - [Go Blog](https://blog.golang.org/): Official Go blog with articles on best practices, new features, and community insights.
 - [Go Wiki](https://github.com/golang/go/wiki): A collection of resources and community-contributed information.
 - [Go Modules](https://blog.golang.org/using-go-modules): Understanding Go's dependency management system.
 - [Advanced Go Programming](https://advancedgolang.com/): Resources and articles for more experienced Go developers.
-  
