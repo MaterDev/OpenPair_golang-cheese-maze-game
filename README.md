@@ -1,4 +1,4 @@
-# OpenPair: Golang 04 - Get the Cheese
+# OpenPair: Golang 04 - Get The Cheese!
 
 ![Cover Image](./cover.png)
 
