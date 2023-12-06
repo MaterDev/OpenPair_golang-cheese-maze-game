@@ -1,4 +1,4 @@
-# OpenPair: Golang 04 - Get The Cheese!
+# OpenPair: Golang 04 - Get The Cheese
 
 ![Cover Image](./cover.png)
 
@@ -24,6 +24,12 @@ Mouse Maze is a simple console-based game written in Go. In this game, players n
 - Console-based user interface.
 - Basic keyboard input to control the mouse.
 - Clear screen functionality for a smooth gaming experience.
+
+### 2D Matrix Traversal
+
+The game uses a 2D matrix to represent the maze. The matrix is a 2D array of characters. Each character represents a cell in the maze. Navigating the matrix involves moving the mouse to a new cell by changing its X and Y coordinates.
+
+![2D Matrix](./2dGridDiagram.png)
 
 ### Requirements
 
@@ -64,3 +70,4 @@ In addition to the resources provided in the first tutorial, here are some more 
 - [Go Wiki](https://github.com/golang/go/wiki): A collection of resources and community-contributed information.
 - [Go Modules](https://blog.golang.org/using-go-modules): Understanding Go's dependency management system.
 - [Advanced Go Programming](https://advancedgolang.com/): Resources and articles for more experienced Go developers.
+- [GoLang Docs](https://golangdocs.com/): A collection of Go tutorials and articles.
